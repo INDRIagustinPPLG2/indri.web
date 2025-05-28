@@ -256,6 +256,7 @@
     <nav>
     <button onclick="checkout()" id="wa">Checkout via WhatsApp</button>
 </nav>
+      <p style="text-align: center;">Sitem pembayaran hanya bisa COD, jadi siapkan uang cash yang pas untuk pembayaran!!</p>
     </div>
                </div>
                </div>
@@ -303,7 +304,7 @@
 
     function checkout() {
       if (qty === 0) {
-        alert("Tambah dulu produknya!");
+        alert("Tambahin ke keranjang dulu produknya!!");
         return;
       }
       const pesan = `Halo! aku pengen beli chicken katsu nya ${qty} box. Total harganya Rp ${(qty * harga).toLocaleString()}`;
